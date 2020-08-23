@@ -22,7 +22,7 @@ namespace AssignmentFive
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-            DollarComputorsDataGridView_CellClick(sender , e as DataGridViewCellEventArgs);
+          //  DollarComputorsDataGridView_CellClick(sender , e as DataGridViewCellEventArgs);
 
         }
 
@@ -43,8 +43,7 @@ namespace AssignmentFive
 
         private void SelectFormNextButton_Click(object sender, EventArgs e)
         {
-            Program.productionForm.Show();
-            this.Hide();
+            Program.selectedProduct.ProductID = DollarComputorsDataGridView.SelectedRows[0].Cells[0].Value.ToString();
             Program.selectedProduct.Cost = DollarComputorsDataGridView.SelectedRows[0].Cells[1].Value.ToString();
             Program.selectedProduct.Manufacturer = DollarComputorsDataGridView.SelectedRows[0].Cells[2].Value.ToString();
             Program.selectedProduct.Model = DollarComputorsDataGridView.SelectedRows[0].Cells[3].Value.ToString();
@@ -75,8 +74,12 @@ namespace AssignmentFive
             Program.selectedProduct.Mouse_type = DollarComputorsDataGridView.SelectedRows[0].Cells[28].Value.ToString();
             Program.selectedProduct.Power = DollarComputorsDataGridView.SelectedRows[0].Cells[29].Value.ToString();
             Program.selectedProduct.Webcam = DollarComputorsDataGridView.SelectedRows[0].Cells[30].Value.ToString();
+            Debug.WriteLine(Program.selectedProduct.ProductID);
+            Program.productionForm.Show();
+            this.Hide();
+            
 
-            //Debug.WriteLine(Program.selectedProduct.Cost);
+           
         }
     }
 }

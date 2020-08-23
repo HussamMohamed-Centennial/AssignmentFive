@@ -17,7 +17,7 @@ namespace AssignmentFive
             InitializeComponent();
         }
 
-        private void NewButton_Click(object sender, EventArgs e)
+        public void NewButton_Click(object sender, EventArgs e)
         {
             Program.startForm.Hide();
             Program.selectForm.Show();
