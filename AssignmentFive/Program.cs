@@ -13,6 +13,7 @@ namespace AssignmentFive
         public static StartForm startForm;
         public static SelectForm selectForm;
         public static ProductionForm productionForm;
+        public static Products selectedProduct;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -26,6 +27,7 @@ namespace AssignmentFive
             startForm = new StartForm();
             selectForm = new SelectForm();
             productionForm = new ProductionForm();
+            selectedProduct = new Products();
             Application.Run(splashForm);
         }
     }

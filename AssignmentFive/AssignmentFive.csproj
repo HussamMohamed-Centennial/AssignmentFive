@@ -57,6 +57,7 @@
     <Compile Include="ProductionForm.Designer.cs">
       <DependentUpon>ProductionForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Products.cs" />
     <Compile Include="SelectForm.cs">
       <SubType>Form</SubType>
     </Compile>

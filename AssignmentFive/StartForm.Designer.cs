@@ -76,7 +76,7 @@
             this.MinimizeBox = false;
             this.Name = "StartForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Selection Form";
             this.ResumeLayout(false);
 
         }
