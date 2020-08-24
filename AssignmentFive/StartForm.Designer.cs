@@ -35,9 +35,10 @@
             // 
             // NewButton
             // 
-            this.NewButton.Location = new System.Drawing.Point(122, 171);
+            this.NewButton.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewButton.Location = new System.Drawing.Point(34, 145);
             this.NewButton.Name = "NewButton";
-            this.NewButton.Size = new System.Drawing.Size(128, 59);
+            this.NewButton.Size = new System.Drawing.Size(310, 59);
             this.NewButton.TabIndex = 0;
             this.NewButton.Text = "New Order";
             this.NewButton.UseVisualStyleBackColor = true;
@@ -45,9 +46,10 @@
             // 
             // LoadButtom
             // 
-            this.LoadButtom.Location = new System.Drawing.Point(122, 264);
+            this.LoadButtom.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoadButtom.Location = new System.Drawing.Point(34, 238);
             this.LoadButtom.Name = "LoadButtom";
-            this.LoadButtom.Size = new System.Drawing.Size(128, 59);
+            this.LoadButtom.Size = new System.Drawing.Size(310, 59);
             this.LoadButtom.TabIndex = 0;
             this.LoadButtom.Text = "Load a saved Order";
             this.LoadButtom.UseVisualStyleBackColor = true;
@@ -55,9 +57,10 @@
             // 
             // ExitButtom
             // 
-            this.ExitButtom.Location = new System.Drawing.Point(122, 359);
+            this.ExitButtom.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ExitButtom.Location = new System.Drawing.Point(34, 333);
             this.ExitButtom.Name = "ExitButtom";
-            this.ExitButtom.Size = new System.Drawing.Size(128, 59);
+            this.ExitButtom.Size = new System.Drawing.Size(310, 59);
             this.ExitButtom.TabIndex = 1;
             this.ExitButtom.Text = "Exit";
             this.ExitButtom.UseVisualStyleBackColor = true;

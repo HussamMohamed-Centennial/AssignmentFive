@@ -17,6 +17,7 @@ namespace AssignmentFive
             InitializeComponent();
         }
 
+
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             Program.splashForm.Hide();

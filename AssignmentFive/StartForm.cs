@@ -17,12 +17,15 @@ namespace AssignmentFive
             InitializeComponent();
         }
 
+        //Event handler which will all the  user to move between forms 
+
         public void NewButton_Click(object sender, EventArgs e)
         {
             Program.startForm.Hide();
             Program.selectForm.Show();
         }
 
+        //Event handler which will all the  user to move between forms 
         private void LoadButtom_Click(object sender, EventArgs e)
         {
             Program.startForm.Hide();

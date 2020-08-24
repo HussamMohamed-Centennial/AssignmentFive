@@ -38,7 +38,18 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SystemGroupBox = new System.Windows.Forms.GroupBox();
+            this.OS_Label = new System.Windows.Forms.Label();
+            this.WebCamLabel = new System.Windows.Forms.Label();
+            this.GPUTypeLabel = new System.Windows.Forms.Label();
+            this.HDD_Label = new System.Windows.Forms.Label();
+            this.SpeedLabel = new System.Windows.Forms.Label();
+            this.NumberLabel = new System.Windows.Forms.Label();
+            this.TypeLabel = new System.Windows.Forms.Label();
+            this.BrandLabel = new System.Windows.Forms.Label();
+            this.MemoryLabel = new System.Windows.Forms.Label();
+            this.LCDLabel = new System.Windows.Forms.Label();
             this.BiglistBox = new System.Windows.Forms.ListBox();
+            this.ModelTextBox = new System.Windows.Forms.TextBox();
             this.PlatformTextBox = new System.Windows.Forms.TextBox();
             this.ModelLabel = new System.Windows.Forms.Label();
             this.ManuTextBox = new System.Windows.Forms.TextBox();
@@ -46,24 +57,13 @@
             this.ManuLabel = new System.Windows.Forms.Label();
             this.ConditionTextBox = new System.Windows.Forms.TextBox();
             this.CondionLabel = new System.Windows.Forms.Label();
-            this.LCDLabel = new System.Windows.Forms.Label();
-            this.MemoryLabel = new System.Windows.Forms.Label();
-            this.BrandLabel = new System.Windows.Forms.Label();
-            this.TypeLabel = new System.Windows.Forms.Label();
-            this.NumberLabel = new System.Windows.Forms.Label();
-            this.SpeedLabel = new System.Windows.Forms.Label();
-            this.HDD_Label = new System.Windows.Forms.Label();
-            this.GPUTypeLabel = new System.Windows.Forms.Label();
-            this.WebCamLabel = new System.Windows.Forms.Label();
-            this.OS_Label = new System.Windows.Forms.Label();
-            this.ModelTextBox = new System.Windows.Forms.TextBox();
             this.PriceGroupBox = new System.Windows.Forms.GroupBox();
-            this.PriceLabel = new System.Windows.Forms.Label();
-            this.TaxLabel = new System.Windows.Forms.Label();
-            this.TotalLabel = new System.Windows.Forms.Label();
-            this.PriceTextBox = new System.Windows.Forms.TextBox();
-            this.TaxTextBox = new System.Windows.Forms.TextBox();
             this.TotalTexBox = new System.Windows.Forms.TextBox();
+            this.TaxTextBox = new System.Windows.Forms.TextBox();
+            this.PriceTextBox = new System.Windows.Forms.TextBox();
+            this.TotalLabel = new System.Windows.Forms.Label();
+            this.TaxLabel = new System.Windows.Forms.Label();
+            this.PriceLabel = new System.Windows.Forms.Label();
             this.BackButton = new System.Windows.Forms.Button();
             this.CancelButton = new System.Windows.Forms.Button();
             this.FinishButton = new System.Windows.Forms.Button();
@@ -97,19 +97,19 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.printToolStripMenuItem.Text = "Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(96, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(99, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             // 
             // editToolStripMenuItem
@@ -170,6 +170,96 @@
             this.SystemGroupBox.TabStop = false;
             this.SystemGroupBox.Text = "System Components";
             // 
+            // OS_Label
+            // 
+            this.OS_Label.AutoSize = true;
+            this.OS_Label.Location = new System.Drawing.Point(39, 322);
+            this.OS_Label.Name = "OS_Label";
+            this.OS_Label.Size = new System.Drawing.Size(22, 13);
+            this.OS_Label.TabIndex = 3;
+            this.OS_Label.Text = "OS";
+            // 
+            // WebCamLabel
+            // 
+            this.WebCamLabel.AutoSize = true;
+            this.WebCamLabel.Location = new System.Drawing.Point(16, 296);
+            this.WebCamLabel.Name = "WebCamLabel";
+            this.WebCamLabel.Size = new System.Drawing.Size(51, 13);
+            this.WebCamLabel.TabIndex = 3;
+            this.WebCamLabel.Text = "WebCam";
+            // 
+            // GPUTypeLabel
+            // 
+            this.GPUTypeLabel.AutoSize = true;
+            this.GPUTypeLabel.Location = new System.Drawing.Point(13, 270);
+            this.GPUTypeLabel.Name = "GPUTypeLabel";
+            this.GPUTypeLabel.Size = new System.Drawing.Size(57, 13);
+            this.GPUTypeLabel.TabIndex = 3;
+            this.GPUTypeLabel.Text = "GPU Type";
+            // 
+            // HDD_Label
+            // 
+            this.HDD_Label.AutoSize = true;
+            this.HDD_Label.Location = new System.Drawing.Point(36, 246);
+            this.HDD_Label.Name = "HDD_Label";
+            this.HDD_Label.Size = new System.Drawing.Size(31, 13);
+            this.HDD_Label.TabIndex = 3;
+            this.HDD_Label.Text = "HDD";
+            // 
+            // SpeedLabel
+            // 
+            this.SpeedLabel.AutoSize = true;
+            this.SpeedLabel.Location = new System.Drawing.Point(8, 219);
+            this.SpeedLabel.Name = "SpeedLabel";
+            this.SpeedLabel.Size = new System.Drawing.Size(63, 13);
+            this.SpeedLabel.TabIndex = 3;
+            this.SpeedLabel.Text = "CPU Speed";
+            // 
+            // NumberLabel
+            // 
+            this.NumberLabel.AutoSize = true;
+            this.NumberLabel.Location = new System.Drawing.Point(6, 192);
+            this.NumberLabel.Name = "NumberLabel";
+            this.NumberLabel.Size = new System.Drawing.Size(69, 13);
+            this.NumberLabel.TabIndex = 3;
+            this.NumberLabel.Text = "CPU Number";
+            // 
+            // TypeLabel
+            // 
+            this.TypeLabel.AutoSize = true;
+            this.TypeLabel.Location = new System.Drawing.Point(17, 165);
+            this.TypeLabel.Name = "TypeLabel";
+            this.TypeLabel.Size = new System.Drawing.Size(56, 13);
+            this.TypeLabel.TabIndex = 3;
+            this.TypeLabel.Text = "CPU Type";
+            // 
+            // BrandLabel
+            // 
+            this.BrandLabel.AutoSize = true;
+            this.BrandLabel.Location = new System.Drawing.Point(14, 138);
+            this.BrandLabel.Name = "BrandLabel";
+            this.BrandLabel.Size = new System.Drawing.Size(60, 13);
+            this.BrandLabel.TabIndex = 3;
+            this.BrandLabel.Text = "CPU Brand";
+            // 
+            // MemoryLabel
+            // 
+            this.MemoryLabel.AutoSize = true;
+            this.MemoryLabel.Location = new System.Drawing.Point(29, 110);
+            this.MemoryLabel.Name = "MemoryLabel";
+            this.MemoryLabel.Size = new System.Drawing.Size(44, 13);
+            this.MemoryLabel.TabIndex = 3;
+            this.MemoryLabel.Text = "Memory";
+            // 
+            // LCDLabel
+            // 
+            this.LCDLabel.AutoSize = true;
+            this.LCDLabel.Location = new System.Drawing.Point(25, 86);
+            this.LCDLabel.Name = "LCDLabel";
+            this.LCDLabel.Size = new System.Drawing.Size(51, 13);
+            this.LCDLabel.TabIndex = 3;
+            this.LCDLabel.Text = "LCD Size";
+            // 
             // BiglistBox
             // 
             this.BiglistBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -178,6 +268,13 @@
             this.BiglistBox.Name = "BiglistBox";
             this.BiglistBox.Size = new System.Drawing.Size(258, 264);
             this.BiglistBox.TabIndex = 2;
+            // 
+            // ModelTextBox
+            // 
+            this.ModelTextBox.Location = new System.Drawing.Point(242, 46);
+            this.ModelTextBox.Name = "ModelTextBox";
+            this.ModelTextBox.Size = new System.Drawing.Size(94, 20);
+            this.ModelTextBox.TabIndex = 1;
             // 
             // PlatformTextBox
             // 
@@ -236,103 +333,6 @@
             this.CondionLabel.TabIndex = 0;
             this.CondionLabel.Text = "Condition";
             // 
-            // LCDLabel
-            // 
-            this.LCDLabel.AutoSize = true;
-            this.LCDLabel.Location = new System.Drawing.Point(25, 86);
-            this.LCDLabel.Name = "LCDLabel";
-            this.LCDLabel.Size = new System.Drawing.Size(51, 13);
-            this.LCDLabel.TabIndex = 3;
-            this.LCDLabel.Text = "LCD Size";
-            // 
-            // MemoryLabel
-            // 
-            this.MemoryLabel.AutoSize = true;
-            this.MemoryLabel.Location = new System.Drawing.Point(29, 110);
-            this.MemoryLabel.Name = "MemoryLabel";
-            this.MemoryLabel.Size = new System.Drawing.Size(44, 13);
-            this.MemoryLabel.TabIndex = 3;
-            this.MemoryLabel.Text = "Memory";
-            // 
-            // BrandLabel
-            // 
-            this.BrandLabel.AutoSize = true;
-            this.BrandLabel.Location = new System.Drawing.Point(14, 138);
-            this.BrandLabel.Name = "BrandLabel";
-            this.BrandLabel.Size = new System.Drawing.Size(60, 13);
-            this.BrandLabel.TabIndex = 3;
-            this.BrandLabel.Text = "CPU Brand";
-            // 
-            // TypeLabel
-            // 
-            this.TypeLabel.AutoSize = true;
-            this.TypeLabel.Location = new System.Drawing.Point(17, 165);
-            this.TypeLabel.Name = "TypeLabel";
-            this.TypeLabel.Size = new System.Drawing.Size(56, 13);
-            this.TypeLabel.TabIndex = 3;
-            this.TypeLabel.Text = "CPU Type";
-            // 
-            // NumberLabel
-            // 
-            this.NumberLabel.AutoSize = true;
-            this.NumberLabel.Location = new System.Drawing.Point(6, 192);
-            this.NumberLabel.Name = "NumberLabel";
-            this.NumberLabel.Size = new System.Drawing.Size(69, 13);
-            this.NumberLabel.TabIndex = 3;
-            this.NumberLabel.Text = "CPU Number";
-            // 
-            // SpeedLabel
-            // 
-            this.SpeedLabel.AutoSize = true;
-            this.SpeedLabel.Location = new System.Drawing.Point(8, 219);
-            this.SpeedLabel.Name = "SpeedLabel";
-            this.SpeedLabel.Size = new System.Drawing.Size(63, 13);
-            this.SpeedLabel.TabIndex = 3;
-            this.SpeedLabel.Text = "CPU Speed";
-            // 
-            // HDD_Label
-            // 
-            this.HDD_Label.AutoSize = true;
-            this.HDD_Label.Location = new System.Drawing.Point(36, 246);
-            this.HDD_Label.Name = "HDD_Label";
-            this.HDD_Label.Size = new System.Drawing.Size(31, 13);
-            this.HDD_Label.TabIndex = 3;
-            this.HDD_Label.Text = "HDD";
-            // 
-            // GPUTypeLabel
-            // 
-            this.GPUTypeLabel.AutoSize = true;
-            this.GPUTypeLabel.Location = new System.Drawing.Point(13, 270);
-            this.GPUTypeLabel.Name = "GPUTypeLabel";
-            this.GPUTypeLabel.Size = new System.Drawing.Size(57, 13);
-            this.GPUTypeLabel.TabIndex = 3;
-            this.GPUTypeLabel.Text = "GPU Type";
-            // 
-            // WebCamLabel
-            // 
-            this.WebCamLabel.AutoSize = true;
-            this.WebCamLabel.Location = new System.Drawing.Point(16, 296);
-            this.WebCamLabel.Name = "WebCamLabel";
-            this.WebCamLabel.Size = new System.Drawing.Size(51, 13);
-            this.WebCamLabel.TabIndex = 3;
-            this.WebCamLabel.Text = "WebCam";
-            // 
-            // OS_Label
-            // 
-            this.OS_Label.AutoSize = true;
-            this.OS_Label.Location = new System.Drawing.Point(39, 322);
-            this.OS_Label.Name = "OS_Label";
-            this.OS_Label.Size = new System.Drawing.Size(22, 13);
-            this.OS_Label.TabIndex = 3;
-            this.OS_Label.Text = "OS";
-            // 
-            // ModelTextBox
-            // 
-            this.ModelTextBox.Location = new System.Drawing.Point(242, 46);
-            this.ModelTextBox.Name = "ModelTextBox";
-            this.ModelTextBox.Size = new System.Drawing.Size(94, 20);
-            this.ModelTextBox.TabIndex = 1;
-            // 
             // PriceGroupBox
             // 
             this.PriceGroupBox.Controls.Add(this.TotalTexBox);
@@ -348,25 +348,26 @@
             this.PriceGroupBox.TabStop = false;
             this.PriceGroupBox.Text = "Your Price";
             // 
-            // PriceLabel
+            // TotalTexBox
             // 
-            this.PriceLabel.AutoSize = true;
-            this.PriceLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PriceLabel.Location = new System.Drawing.Point(30, 43);
-            this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(43, 19);
-            this.PriceLabel.TabIndex = 0;
-            this.PriceLabel.Text = "Price";
+            this.TotalTexBox.Location = new System.Drawing.Point(258, 132);
+            this.TotalTexBox.Name = "TotalTexBox";
+            this.TotalTexBox.Size = new System.Drawing.Size(94, 20);
+            this.TotalTexBox.TabIndex = 2;
             // 
-            // TaxLabel
+            // TaxTextBox
             // 
-            this.TaxLabel.AutoSize = true;
-            this.TaxLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TaxLabel.Location = new System.Drawing.Point(30, 81);
-            this.TaxLabel.Name = "TaxLabel";
-            this.TaxLabel.Size = new System.Drawing.Size(111, 19);
-            this.TaxLabel.TabIndex = 0;
-            this.TaxLabel.Text = "Sales Tax (13%)";
+            this.TaxTextBox.Location = new System.Drawing.Point(258, 78);
+            this.TaxTextBox.Name = "TaxTextBox";
+            this.TaxTextBox.Size = new System.Drawing.Size(94, 20);
+            this.TaxTextBox.TabIndex = 2;
+            // 
+            // PriceTextBox
+            // 
+            this.PriceTextBox.Location = new System.Drawing.Point(258, 42);
+            this.PriceTextBox.Name = "PriceTextBox";
+            this.PriceTextBox.Size = new System.Drawing.Size(94, 20);
+            this.PriceTextBox.TabIndex = 2;
             // 
             // TotalLabel
             // 
@@ -378,26 +379,25 @@
             this.TotalLabel.TabIndex = 0;
             this.TotalLabel.Text = "Total";
             // 
-            // PriceTextBox
+            // TaxLabel
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(258, 42);
-            this.PriceTextBox.Name = "PriceTextBox";
-            this.PriceTextBox.Size = new System.Drawing.Size(94, 20);
-            this.PriceTextBox.TabIndex = 2;
+            this.TaxLabel.AutoSize = true;
+            this.TaxLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TaxLabel.Location = new System.Drawing.Point(30, 81);
+            this.TaxLabel.Name = "TaxLabel";
+            this.TaxLabel.Size = new System.Drawing.Size(111, 19);
+            this.TaxLabel.TabIndex = 0;
+            this.TaxLabel.Text = "Sales Tax (13%)";
             // 
-            // TaxTextBox
+            // PriceLabel
             // 
-            this.TaxTextBox.Location = new System.Drawing.Point(258, 78);
-            this.TaxTextBox.Name = "TaxTextBox";
-            this.TaxTextBox.Size = new System.Drawing.Size(94, 20);
-            this.TaxTextBox.TabIndex = 2;
-            // 
-            // TotalTexBox
-            // 
-            this.TotalTexBox.Location = new System.Drawing.Point(258, 132);
-            this.TotalTexBox.Name = "TotalTexBox";
-            this.TotalTexBox.Size = new System.Drawing.Size(94, 20);
-            this.TotalTexBox.TabIndex = 2;
+            this.PriceLabel.AutoSize = true;
+            this.PriceLabel.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PriceLabel.Location = new System.Drawing.Point(30, 43);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.Size = new System.Drawing.Size(43, 19);
+            this.PriceLabel.TabIndex = 0;
+            this.PriceLabel.Text = "Price";
             // 
             // BackButton
             // 
@@ -445,7 +445,6 @@
             this.Text = "OrderForm";
             this.Activated += new System.EventHandler(this.OrderForm_Activated);
             this.Deactivate += new System.EventHandler(this.OrderForm_Deactivate);
-            this.Load += new System.EventHandler(this.OrderForm_Activated);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.SystemGroupBox.ResumeLayout(false);

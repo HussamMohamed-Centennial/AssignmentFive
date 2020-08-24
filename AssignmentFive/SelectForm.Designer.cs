@@ -75,10 +75,10 @@
             // 
             // SelectFormTopLabel
             // 
-            this.SelectFormTopLabel.AutoSize = true;
-            this.SelectFormTopLabel.Location = new System.Drawing.Point(37, 24);
+            this.SelectFormTopLabel.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectFormTopLabel.Location = new System.Drawing.Point(12, 34);
             this.SelectFormTopLabel.Name = "SelectFormTopLabel";
-            this.SelectFormTopLabel.Size = new System.Drawing.Size(97, 13);
+            this.SelectFormTopLabel.Size = new System.Drawing.Size(234, 32);
             this.SelectFormTopLabel.TabIndex = 0;
             this.SelectFormTopLabel.Text = "Available hardware";
             // 
@@ -128,7 +128,6 @@
             this.DollarComputorsDataGridView.Size = new System.Drawing.Size(776, 320);
             this.DollarComputorsDataGridView.TabIndex = 1;
             this.DollarComputorsDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DollarComputorsDataGridView_CellClick);
-            this.DollarComputorsDataGridView.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.DollarComputorsDataGridView_RowEnter);
             // 
             // productIDDataGridViewTextBoxColumn
             // 
@@ -395,10 +394,10 @@
             // SelectionLabel
             // 
             this.SelectionLabel.AutoSize = true;
-            this.SelectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SelectionLabel.Location = new System.Drawing.Point(28, 412);
+            this.SelectionLabel.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SelectionLabel.Location = new System.Drawing.Point(37, 412);
             this.SelectionLabel.Name = "SelectionLabel";
-            this.SelectionLabel.Size = new System.Drawing.Size(100, 17);
+            this.SelectionLabel.Size = new System.Drawing.Size(87, 17);
             this.SelectionLabel.TabIndex = 2;
             this.SelectionLabel.Text = "Your Selection";
             // 
@@ -415,6 +414,7 @@
             // 
             // SelectFormNextButton
             // 
+            this.SelectFormNextButton.Font = new System.Drawing.Font("Calibri", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SelectFormNextButton.Location = new System.Drawing.Point(689, 402);
             this.SelectFormNextButton.Name = "SelectFormNextButton";
             this.SelectFormNextButton.Size = new System.Drawing.Size(88, 36);

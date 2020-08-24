@@ -15,7 +15,7 @@ namespace AssignmentFive
 {
     public partial class ProductionForm : Form
     {
-        public static List<string> OpenFileData = new List<string>();
+        public static List<string> OpenFileData =new List<string>();
         public ProductionForm()
         {
             InitializeComponent();
@@ -23,11 +23,18 @@ namespace AssignmentFive
 
         private void ProductionForm_Load(object sender, EventArgs e)
         {
-            
+        
         }
 
+        /// <summary>
+        /// When loading production form the data which we stored in the class will be retrieved
+        /// and assigned to appropriate textbox
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProductionForm_Activated(object sender, EventArgs e)
         {
+
             ProductIDTextBox.Text = Program.selectedProduct.ProductID;
             ConditionTextBox.Text = Program.selectedProduct.Condition;
             CostTextBox.Text = Program.selectedProduct.Cost;
@@ -45,8 +52,7 @@ namespace AssignmentFive
             TypeTextBox.Text = Program.selectedProduct.GPU_Type;
             WebCamTextBox.Text = Program.selectedProduct.Webcam;
 
-
-            Debug.WriteLine(Program.selectedProduct.ProductID);
+            // Debug.WriteLine(Program.selectedProduct.ProductID);
         }
 
         private void SelectAnothorProductButton_Click(object sender, EventArgs e)
@@ -62,12 +68,23 @@ namespace AssignmentFive
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            Program.orderForm.Show();
-            this.Hide();
+            if (Program.selectedProduct.ProductID == String.Empty)
+            {
+                StoreData();
+                Program.orderForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                Program.orderForm.Show();
+                this.Hide();
+                }
+            
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             ProductSaveFileDialog.InitialDirectory = Directory.GetCurrentDirectory();
             var productSaveFileDialogResult = ProductSaveFileDialog.ShowDialog();
             if (productSaveFileDialogResult != DialogResult.Cancel)
@@ -137,11 +154,30 @@ namespace AssignmentFive
                 CPUSpeedTextBox.Text = OpenFileData[12].ToString();
                 TypeTextBox.Text = OpenFileData[19].ToString();
                 WebCamTextBox.Text = OpenFileData[30].ToString();
-
-
                 streamReader.Close();
             }
 
         }
+
+        private void StoreData()
+        {
+            Program.selectedProduct.ProductID = ProductIDTextBox.Text;
+            Program.selectedProduct.Condition = ConditionTextBox.Text;
+            Program.selectedProduct.Cost = CostTextBox.Text;
+            Program.selectedProduct.Platform = PlatformTextBox.Text;
+            Program.selectedProduct.OS = OSTextBox.Text;
+            Program.selectedProduct.Manufacturer = manuTextBox.Text;
+            Program.selectedProduct.Model = ModelTextBox.Text;
+            Program.selectedProduct.RAM_size = MemoryTexBox.Text;
+            Program.selectedProduct.Screensize = LCDSizeTextBox.Text;
+            Program.selectedProduct.HDD_size = HDDTextBox.Text;
+            Program.selectedProduct.CPU_brand = BrandTextBox.Text;
+            Program.selectedProduct.CPU_number = NumberTextBox.Text;
+            Program.selectedProduct.CPU_type = CPUTypeTextBox.Text;
+            Program.selectedProduct.CPU_speed = CPUSpeedTextBox.Text;
+            Program.selectedProduct.GPU_Type = TypeTextBox.Text;
+            Program.selectedProduct.Webcam = WebCamTextBox.Text;
+        }
+
     }
 }

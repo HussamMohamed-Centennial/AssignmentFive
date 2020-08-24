@@ -22,16 +22,9 @@ namespace AssignmentFive
         {
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
-          //  DollarComputorsDataGridView_CellClick(sender , e as DataGridViewCellEventArgs);
-
         }
 
-        private void DollarComputorsDataGridView_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            //SelectionTextBox.Text = DollarComputorsDataGridView
-            
-        }
-
+        
         private void DollarComputorsDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             var mannufacturer = DollarComputorsDataGridView.SelectedRows[0].Cells[2].Value;
@@ -41,6 +34,12 @@ namespace AssignmentFive
             SelectionTextBox.Text = $"{mannufacturer}, Model: {model}, which will cost: {cost}";
         }
 
+        /// <summary>
+        /// When the user click Next Button all the the data will be moved from data grid veiw
+        /// to the class i created , to all the app to move data between different forms
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SelectFormNextButton_Click(object sender, EventArgs e)
         {
             Program.selectedProduct.ProductID = DollarComputorsDataGridView.SelectedRows[0].Cells[0].Value.ToString();

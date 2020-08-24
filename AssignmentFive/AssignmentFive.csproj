@@ -134,6 +134,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\D_log.jpg" />
     <None Include="bin\Debug\Toshipa.png" />
     <None Include="bin\Debug\asus.jpg" />
     <None Include="bin\Debug\acer.png" />

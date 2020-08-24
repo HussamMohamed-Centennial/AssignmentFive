@@ -16,6 +16,7 @@ namespace AssignmentFive
         public OrderForm()
         {
             InitializeComponent();
+            BiglistBox.Items.Clear();
         }
 
         private void backToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,8 +76,9 @@ namespace AssignmentFive
 
         private void BackButton_Click(object sender, EventArgs e)
         {
-            //Program.productionForm.Show();
-            //this.Hide();
+            this.Hide();
+            Program.productionForm.Show();
+            
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
