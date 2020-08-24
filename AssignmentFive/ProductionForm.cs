@@ -15,7 +15,7 @@ namespace AssignmentFive
 {
     public partial class ProductionForm : Form
     {
-        private static List<string> OpenFileData = new List<string>();
+        public static List<string> OpenFileData = new List<string>();
         public ProductionForm()
         {
             InitializeComponent();
@@ -23,8 +23,7 @@ namespace AssignmentFive
 
         private void ProductionForm_Load(object sender, EventArgs e)
         {
-            ProductIDTextBox.Text = Program.selectedProduct.ProductID;
-            ConditionTextBox.Text = Program.selectedProduct.Condition;
+            
         }
 
         private void ProductionForm_Activated(object sender, EventArgs e)
